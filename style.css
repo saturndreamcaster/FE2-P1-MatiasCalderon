@@ -146,10 +146,73 @@ img {
   border-radius: 1.1rem;
 }
 
+.comparison-card img {
+  width: 100%;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.comparison,
+.specs,
+.benefits {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.comparison-grid,
+.spec-grid,
+.benefit-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.comparison-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.comparison-card,
+.spec-card,
+.benefit-card {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef6ff 100%);
+  border: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+.comparison-card h3,
+.spec-card h3,
+.benefit-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+}
+
+.comparison-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #475569;
+}
+
+.comparison-card li {
+  margin-bottom: 0.75rem;
+}
+
+.spec-card p,
+.benefit-card p {
+  margin: 0;
+  color: #475569;
+}
+
 @media (max-width: 960px) {
   .site-header,
   .intro-body,
-  .feature-grid {
+  .feature-grid,
+  .comparison-grid,
+  .spec-grid,
+  .benefit-grid {
     grid-template-columns: 1fr;
   }
 
