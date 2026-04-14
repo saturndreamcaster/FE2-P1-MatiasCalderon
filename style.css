@@ -208,13 +208,79 @@ img {
   color: #475569;
 }
 
+.product-sheet {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-sheet h2 {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+}
+
+.product-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.product-details h3 {
+  margin: 0 0 1rem;
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.product-details ul {
+  margin: 0 0 2rem;
+  padding-left: 1.5rem;
+  color: #475569;
+}
+
+.product-details li {
+  margin-bottom: 0.5rem;
+}
+
+.tech-attributes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.attribute {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  text-align: center;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.product-info p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
 @media (max-width: 960px) {
   .site-header,
   .intro-body,
   .feature-grid,
   .comparison-grid,
   .spec-grid,
-  .benefit-grid {
+  .benefit-grid,
+  .product-content {
     grid-template-columns: 1fr;
   }
 
@@ -245,8 +311,17 @@ img {
   .features,
   .comparison,
   .specs,
-  .benefits {
+  .benefits,
+  .product-sheet {
     padding: 1.75rem;
+  }
+
+  .product-content {
+    gap: 1.5rem;
+  }
+
+  .tech-attributes {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -260,7 +335,8 @@ img {
   .features,
   .comparison,
   .specs,
-  .benefits {
+  .benefits,
+  .product-sheet {
     padding: 1.5rem;
   }
 
@@ -296,7 +372,8 @@ img {
   .intro-highlight h3,
   .comparison-card h3,
   .spec-card h3,
-  .benefit-card h3 {
+  .benefit-card h3,
+  .product-details h3 {
     font-size: 1.1rem;
   }
 
